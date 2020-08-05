@@ -1,0 +1,15 @@
+.btn{
+    background: $verde;
+    color: white;
+    display: block;
+    margin: 14px;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+
+    @include from(tablet){
+        width: 30%;
+        margin: 30px auto;
+    }
+}
+

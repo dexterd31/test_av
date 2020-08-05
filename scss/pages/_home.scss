@@ -1,0 +1,198 @@
+.main-section{
+    
+
+    &__header{
+        display: flex;
+        align-items: center;
+        height: 150px;
+        margin: 12px 0px;
+
+        @include from(desktop){
+            height: 80px;
+        }
+    }
+    &__form{
+        width: 100%;
+        margin: 10px 0px;
+
+        @include from(desktop){
+            display: flex;
+            align-items: center;
+        }
+
+
+        &--label{
+            display: block;
+            text-align: center;
+            @include font-size(20px);
+            font-weight: 400;
+            margin-bottom: 5px;
+
+            @include from(desktop){
+                display: block;
+                width: 20%;
+                margin: 0;
+            }
+
+            
+        }
+        &--input{
+            @include font-size(16px);
+            display: block;
+            margin: auto auto 7px auto;
+            outline: none;
+            text-align: center;
+            width: 90%;
+            height: 30px;
+
+            @include from(tablet){
+                width: 60%;
+            }
+
+            @include from(desktop){
+                display: inline-block;
+                width: 20%;
+            }
+        }
+    }
+}
+.main__userData{
+
+    &--form{
+        margin: 10px 0px;
+
+        @include from(desktop){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &--label{
+        display: block;
+        text-align: center;
+        @include font-size(20px);
+        font-weight: 400;
+        margin-bottom: 5px;
+
+        @include from(desktop){
+            display: inline-block;
+            width: 20%;
+            margin: 10px 5px;
+        }
+    }
+
+    &--input{
+        @include font-size(16px);
+        display: block;
+        margin: auto auto 7px auto;
+        outline: none;
+        text-align: center;
+        width: 90%;
+        height: 30px;
+
+        @include from(tablet){
+            width: 60%;
+        }
+        
+        @include from(desktop){
+            display: inline-block;
+            width: 25%;
+            margin: 10px 0px;
+        }
+    }
+}
+.data-revision{
+
+    &__options {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        @include from(desktop){
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+    &__container{
+        @include from(desktop){
+            display: inline-block;
+            width: 40%;
+        }
+    }
+
+    &--title {
+        font-weight: normal;
+
+        @include from(desktop){
+            display: inline;
+        }
+    }
+    &--select{
+        width: 60%;
+        border-radius: 4px;
+
+        @include from(tablet){
+            width: 40%; 
+        }
+
+        @include from(desktop){
+            width: 40%;
+            display: inline;
+        }
+    }
+}
+
+.data-machine{
+
+    @include from(desktop){
+        margin-top: 30px;
+    }
+    &--form{
+        margin: 10px 0px;
+
+        @include from(desktop){
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &--label{
+        display: block;
+        text-align: center;
+        @include font-size(20px);
+        font-weight: 400;
+        margin-bottom: 5px;
+
+        @include from(desktop){
+            display:inline;
+        }
+    }
+
+    &--input{
+        @include font-size(16px);
+        display: block;
+        margin: auto auto 7px auto;
+        outline: none;
+        text-align: center;
+        width: 90%;
+        height: 30px;
+
+        @include from(tablet){
+            width: 60%;
+        }
+
+        @include from(desktop){
+            display:inline;
+            width: 15%;
+        }
+    }
+
+}
+
+
+
+
+

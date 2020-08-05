@@ -1,0 +1,14 @@
+.padding {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include from (desktop) {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
