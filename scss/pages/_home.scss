@@ -1,4 +1,4 @@
-.main-section{
+.main{
     
     @include from (tablet){
         width: 80%;
@@ -9,7 +9,7 @@
         
     }
 
-    &__header{
+    &__data{
         display: flex;
         align-items: center;
         height: 150px;
@@ -27,44 +27,42 @@
             display: flex;
             align-items: center;
         }
+    }
+    &__form label{
+        display: block;
+        text-align: center;
+        @include font-size(20px);
+        font-weight: 400;
+        margin-bottom: 5px;
 
-
-        &--label{
+        @include from(desktop){
             display: block;
-            text-align: center;
-            @include font-size(20px);
-            font-weight: 400;
-            margin-bottom: 5px;
-
-            @include from(desktop){
-                display: block;
-                width: 20%;
-                margin: 0;
-            }
-
-            
+            width: 20%;
+            margin: 0;
         }
-        &--input{
-            @include font-size(16px);
-            display: block;
-            margin: auto auto 7px auto;
-            outline: none;
-            text-align: center;
-            width: 90%;
-            height: 30px;
 
-            @include from(tablet){
-                width: 60%;
-            }
+        
+    }
+    &__form input{
+        @include font-size(16px);
+        display: block;
+        margin: auto auto 7px auto;
+        outline: none;
+        text-align: center;
+        width: 90%;
+        height: 30px;
 
-            @include from(desktop){
-                display: inline-block;
-                width: 20%;
-            }
+        @include from(tablet){
+            width: 60%;
+        }
+
+        @include from(desktop){
+            display: inline-block;
+            width: 20%;
         }
     }
 }
-.main__userData{
+.main__userdata{
 
 
     &--form{
@@ -77,7 +75,7 @@
         }
     }
 
-    &--label{
+    &--form label{
         display: block;
         text-align: center;
         @include font-size(20px);
@@ -91,7 +89,7 @@
         }
     }
 
-    &--input{
+    &--form input{
         @include font-size(16px);
         display: block;
         margin: auto auto 7px auto;
@@ -147,7 +145,7 @@
             display: inline;
         }
     }
-    &--select{
+    &--title select{
         text-align: center;
         font-size: 14px;
         padding: 4px;
@@ -165,8 +163,6 @@
 }
 
 .data-machine{
-
-
 
     @include from(desktop){
         margin-top: 30px;
@@ -188,7 +184,7 @@
         }
     }
 
-    &--label{
+    &--form label{
         display: block;
         text-align: center;
         @include font-size(20px);
@@ -201,7 +197,7 @@
         }
     }
 
-    &--input{
+    &--form input{
         @include font-size(16px);
         display: block;
         margin: auto auto 7px auto;
