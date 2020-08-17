@@ -47,7 +47,7 @@
             <div class="data-revision__container">
                 <h3 class="data-revision--title">Formateo</h3>
                 <select class="data-revision--select" name="select">
-                    <option class="data-revision--option" value="" selected>seleccionar</option> 
+                    <option class="data-revision--option" value="" selected disabled>seleccionar</option> 
                     <option class="data-revision--option" value="yes">Si</option>
                     <option class="data-revision--option" value="no">No</option>
                 </select>
@@ -55,7 +55,7 @@
             <div class="data-revision__container">
                 <h3 class="data-revision--title">Cambio de Equipo</h3>
                 <select class="data-revision--select" name="select">
-                    <option class="data-revision--option" value="" selected>seleccionar</option> 
+                    <option class="data-revision--option" value="" selected disabled>seleccionar</option> 
                     <option class="data-revision--option" value="yes">Si</option>
                     <option class="data-revision--option" value="no">No</option>
                 </select>
@@ -63,6 +63,7 @@
         </div>
     </section>
     <section class="data-machine container">
+        <strong class="data-machine--title">Equipo Actual</strong>
         <div class="data-machine--form">
             <label class="data-machine--label" for="">Serial</label>
             <input class="data-machine--input" type="text" name="" id="">
@@ -70,11 +71,58 @@
             <input class="data-machine--input" type="text" name="" id="">
             <label class="data-machine--label" for="">Modelo</label>
             <input class="data-machine--input" type="text" name="" id="">
-            <label class="data-machine--label" for="">Red y/o Wifi</label>
+            <label class="data-machine--label" for="">Wifi</label>
             <input class="data-machine--input" type="text" name="" id="">
         </div>
-        <a class="btn" href="#">Siguiente</a>
     </section>
+    <section class="precheck container" >
+        <span class="panel">Configuracion de Perfil y Precheck</span>
+        <div class="precheck__formats">
+            <div class="precheck__profile">
+                <span class="precheck--title">Precheck de la Informacion</span>
+                <div class="precheck--options">
+                    <div>
+                        <label for="">Ubicar precheck de usuario en D:</label>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Exportar Certificado Digital</label>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Copiar ODBC</label>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Verificacion de Aplicaciones Instaladas</label>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Verificacion de Impresoras Instaladas</label>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <div class="precheck__security">
+                <span class="precheck--titlebkp">Respaldo de Seguridad</span>
+                <div class="precheck__backup">
+                    <label for="">Tamaño de PST's:</label>
+                    <input type="text" name="" id="">
+                    <label for="">Tamaño de Mis Documentos:</label>
+                    <input type="text" name="" id="">
+                    <label for="">Tamaño de Escritorio:</label>
+                    <input type="text" name="" id="">
+                    <label for="">Tamaño de Favoritos:</label>
+                    <input type="text" name="" id="">
+                    <label for="">Tamaño Info Disco local C:</label>
+                    <input type="text" name="" id="">
+                    <label for="">Otros</label>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <a class="btn" href="#">Siguiente</a>
     <footer class="footer">
         <p class=" container footer--text">Design by DexterD &copy</p>
     </footer>
